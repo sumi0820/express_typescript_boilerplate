@@ -6,8 +6,8 @@ app.get("/", (req, res) => res.send("Hello World!"));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
-function hello(name: string): string {return `Hello, ${name}!`;}
+function hello(name: string): string {
+  return `Hello, ${name}!`;
+}
 
-console.log(
- hello("TypeScript")
- );
+console.log(hello("TypeScript"));
