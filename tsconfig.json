@@ -2,10 +2,12 @@
  "compilerOptions": {
      "outDir": "./dist",
      "sourceMap": true,
+    //  "module": "commonjs",
      "module": "es6",
      "target": "es5",
      "moduleResolution": "node",
-     "removeComments": true
+     "removeComments": true,
+     "allowSyntheticDefaultImports": true
  },
  "include": [
      "./src/**/*"
