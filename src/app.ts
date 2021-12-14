@@ -1,14 +1,28 @@
 import express from "express";
+// import * as database from "./models/database.ts";
+
 const app = express();
 
 const port = 3000;
 
 app.get("/", (req, res) => res.send("Hello World!"));
-
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
-function hello(name: string): string {
-  return `Hello, ${name}!`;
-}
+// connect();
+// function connect() {
+//   if (app.get("env") === "test") return;
+//   database
+//     .connect()
+//     .then(() => {
+//       listen();
+//       console.log("Connected to MongoDB");
+//     })
+//     .catch((e) => console.log(`MongoDB Connection Error: ${e}`));
+// }
 
-console.log(hello("TypeScript"));
+// function listen() {
+//   if (app.get("env") === "test") return;
+//   app.listen(process.env.PORT || 3000, () =>
+//     console.log(`App listening to port ${process.env.PORT || 3000}`)
+//   );
+// }
