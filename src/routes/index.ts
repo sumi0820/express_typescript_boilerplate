@@ -1,9 +1,9 @@
-import { Router } from 'express';
-// import { postHook, getPushes } from './controller';
+import { Router } from "express";
+import { postTodo } from "../controllers";
 
 const router = Router();
 
-// router.post('/hook', postHook);
+router.post("/add", postTodo);
 // router.get('/pushes', getPushes);
 
 export default router;

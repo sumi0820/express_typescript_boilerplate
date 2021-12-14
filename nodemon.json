@@ -2,5 +2,5 @@
   "watch": ["src"],
   "ext": "ts",
   "ignore": ["tests/**/*.ts"],
-  "exec": "yarn node --loader ts-node/esm src/app.ts"
+  "exec": "yarn node --experimental-specifier-resolution=node --loader ts-node/esm src/app.ts"
 }
